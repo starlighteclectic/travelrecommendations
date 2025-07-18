@@ -113,7 +113,7 @@ nav {
 
   /* Home page background */
  .intro-section {
-  background-image: url('Photos/skyline2.jpg');
+  background-image: url('skyline2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -196,7 +196,7 @@ nav {
 }
 
 .aboutus-bg {
-  background-image: url('Photos/mountainskyline.jpg');
+  background-image: url('mountainskyline.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -317,7 +317,7 @@ nav {
   display: flex;
   align-items: flex-start; /* or center, as needed */
   gap: 10%;
-  background-image: url('Photos/mountainskyline.jpg');
+  background-image: url('mountainskyline.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
