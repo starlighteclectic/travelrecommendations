@@ -1,0 +1,402 @@
+/* Navbar container */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2c3e50;
+  padding: 12px 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.normal-text {
+  font-weight: lighter;
+}
+/* Logo styling */
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none; /* Removes underline */
+}
+
+/* Centered nav links */
+.nav-items ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items ul li {
+  margin: 0 20px;
+}
+
+.nav-items ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  transition: color 0.2s;
+}
+
+.nav-items ul li a:hover {
+  color: #f39c12;
+}
+
+/* Search bar styling */
+.searchbar {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 4px;
+  padding: 2px 8px;
+  box-shadow: 0 1px 4px rgba(44,62,80,0.07);
+  margin-left: 40px;
+  height: 32px;
+}
+
+.searchbar input[type="text"] {
+  border: none;
+  outline: none;
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  height: 24px;
+   width: 200px;
+}
+
+.button1, .button2 {
+  border: none;
+  background-color: #6c757d;
+  color: #fff;
+  padding: 4px 12px;
+  margin-left: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  height: 28px;
+  transition: background 0.2s;
+}
+
+.button1:hover, .button2:hover {
+  background-color: #f39c12;
+  color: #2c3e50;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 12px 10px;
+    height: 80px;  
+  }
+  .nav-items ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-items ul li {
+    margin: 8px 0;
+  }
+  .searchbar {
+    margin: 16px 0 0 0;
+    width: 100%;
+  }}
+
+  /* Home page background */
+ .intro-section {
+  background-image: url('Photos/skyline2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Move content to the left */
+  /* Optional: add padding for spacing from the edge */
+  padding-left: 60px;
+}
+
+.intro-textbox h1 {
+  text-align: left;
+  font-size: 48px;/* Reduce this value as needed */
+}
+
+.intro-textbox {
+  background: rgba(44, 62, 80, 0.8);
+  color: #fff;
+  padding: 32px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(44,62,80,0.15);
+  text-align: left;
+  font-size: 24px;
+  max-width: 550px;
+  max-height: 375px;
+  margin: 0; /* Remove auto margin to prevent centering */
+}
+
+.book-now-btn {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 32px;
+  background-color: #2b5464;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+}
+
+.book-now-btn:hover {
+  background-color: #fff;
+  color: #59788E;
+  border: 2px solid #59788E;
+}
+
+/* About Us page */
+.aboutus-page nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2c3e50;
+  padding: 12px 40px;
+  width: 100%;
+  height: 60px;  
+  box-sizing: border-box;
+}
+
+.aboutus-page .nav-items ul {
+  justify-content: flex-start; /* Align nav items to the left */
+  padding-right: 860px; /* Add padding to the right for spacing */
+}
+
+.aboutus-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-right: 460px;
+  margin-bottom: 0px;
+  padding-bottom: 0;
+  font-weight: normal;
+}
+
+.aboutus-bg {
+  background-image: url('Photos/mountainskyline.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  width: 100%;
+  padding: 60px 0; /* Adjust as needed for spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutus-section h1 {
+  font-size: 96px; /* or any size you prefer */
+  color: #fff;     /* ensures visibility on background */
+  margin-top: 0;
+  text-align: left;
+  padding-top: 50px;
+  padding-left: 465px;
+  margin-bottom: 40px;
+}
+
+.aboutus-textbox {
+  background: rgba(44, 62, 80, 0.8);
+  color: #fff;
+  padding: 32px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(44,62,80,0.15);
+  text-align: left;
+  font-weight: normal;
+  font-size: 20px;
+  max-width: 700px;
+  max-height: 375px;
+  margin-top: 0;
+  margin: 0; /* Remove auto margin to prevent centering */
+}
+
+.aboutinfo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 0;
+}
+
+.team-flex {
+  display: flex;
+  align-items: center; /* vertically align items */
+  gap: 36px;       
+  margin-top: 60px;    /* space between heading and textbox */
+}
+
+.team-flex h1 {
+  margin: 0;
+  font-size: 75px;     /* adjust as needed */
+  color:#fff;
+}
+
+.team1-textbox {
+  background: rgba(44, 62, 80, 0.5);
+  color: #fff;
+  padding: 8px 32px;
+  border-radius: 10px;
+  font-size: 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Vertically center content */
+  align-items: center;       /* Horizontally center content */
+  text-align: center;        /* Center text inside the box */
+}
+
+.team1-textbox h2 {
+  margin-bottom: 12px; /* Reduce as needed */
+  margin-top: 0;
+}
+
+.team1-textbox p {
+  margin-top: 0;      /* Remove extra space above the title */
+}
+
+.expert-btn {
+  margin-top: 0;
+  padding: 6px 18px;
+  background-color: #2c3e50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.expert-btn:hover {
+  background-color: #fff;
+  color: #f39c12;
+  border: 1px solid #f39c12;
+}
+
+/*contact us page */
+.contactus-page nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2c3e50;
+  padding: 12px 40px;
+  width: 100%;
+  height: 60px;  
+  box-sizing: border-box;
+}
+
+.contactus-page .nav-items ul {
+  justify-content: flex-start; /* Align nav items to the left */
+  padding-right: 860px; /* Add padding to the right for spacing */
+}
+
+.contact-section {
+  display: flex;
+  align-items: flex-start; /* or center, as needed */
+  gap: 10%;
+  background-image: url('Photos/mountainskyline.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;       
+  padding-left: 20%; /* Optional: add spacing from the right edge */
+  font-size: 32px;
+}
+
+.contactus-section h1 {
+  font-size: 96px; /* Increase as needed */
+  color: #fff;
+}
+
+.contact-textbox h1 {
+  text-align: center;
+  font-size: 48px;/* Reduce this value as needed */
+}
+
+.contact-textbox {
+  background: rgba(44, 62, 80, 0.7);
+  color: #fff;
+  padding: 32px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(44,62,80,0.15);
+  text-align: center;
+  font-size: 24px;
+  max-width: 650px;   /* Reduce this value to shrink the box */
+  width: 100%;        /* Ensures responsiveness */
+  margin: 0;
+  /* Remove or adjust these if present: */
+  padding-left: 0;
+  padding-right: 0;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center; /* Center all children horizontally */
+}
+
+.contact-form label {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 4px;
+  text-align: left;      /* Align text to the right */
+  padding-left: 40px;    /* Add space from the left, adjust as needed */
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: rgba(57, 97, 136, 0.5);
+  width: 90%;           /* Or a fixed width like 300px */
+  margin: 0 auto;       /* Center the input/textarea */
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 18px;
+  resize: vertical;
+  display: block;
+}
+
+.contact-btn {
+  background-color: rgba(57, 97, 136, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 24px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.contact-btn:hover {
+  background-color: #fff;
+  color: #f39c12;
+  border: 2px solid #f39c12;
+}
